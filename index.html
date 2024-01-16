@@ -1,15 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahorcado</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div>
-        <h1 class="title">Juego Ahorcado</h1>
+        <center>
+            <h1 class="title" style="color:red;">Juego Ahorcado</h1>
+            <h1 id="msg-final"></h1>
+            <h3 id="acierto"></h3>
+            <div class="flex-row no-wrap">
+                <h2 class="palabra" id="palabra"></h2>
+            </div>
+            <div class="flex-row" id="turnos">
+                <div class="col">
+                    <h3 style="color: blue;">Comprobar letra</h3>
+                </div>
+                <div class="col">
+                    <input type="button" value="comprobar">
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="flex-row">
+                <div class="col">
+                    <div class="flex-row" id="abcdario">
+                    </div>
+                </div>
+                <div class="col"></div>
+            </div>
+        </center>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
