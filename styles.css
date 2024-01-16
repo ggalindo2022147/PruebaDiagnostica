@@ -31,6 +31,10 @@
     animation: zoomInOut 1s ease;
   }
 
-
+.title{
+    font-size: 4rem;
+    font-family:fantasy;
+    color: navy;
+}
     
   
