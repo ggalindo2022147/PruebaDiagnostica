@@ -12,11 +12,8 @@ function enviarDatosAlServidor(nombre){
     return new Promise((resolve,reject) => {
         setTimeout(() => {
             const autorizado = (nombre.toLowerCase() == 'papavictor');
-            if(autorizado){
-                resolve('Bienvenido al sistema!!!');
-            } else {
-                reject('usted no esta autorizado!!!')
-            }
+            const resultado = autorizado ? 'Yo soy el cordi!!!' : 'Acceso no autorizado!!!'
+            resultado ? resolve(resultado) : reject(resultado);
         }, 2000);
     });
 }
